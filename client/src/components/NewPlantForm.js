@@ -46,6 +46,7 @@ function NewPlantForm({ onAddPlant }) {
           step="0.01"
           placeholder="Price"
           value={price}
+          min="0"
           onChange={(e) => setPrice(parseFloat(e.target.value))}
         />
         <button type="submit">Add Plant</button>
